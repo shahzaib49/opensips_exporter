@@ -37,5 +37,21 @@ This package is designed to be modular and extensible. Currently, it supports tw
     - `profile_name`: The name of the profile (e.g., `trunkCalls`)
     - `profile_value`: The profile's value (or `"none"` if no value is present)
 
-## Package Structure
+## Installation
 
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/yourusername/opensips_exporter.git
+   cd opensips_exporter
+   pip install -e .
+   ```
+## Usage
+
+```bash
+opensips_exporter
+```
+This starts an HTTP server on port 8000 where Prometheus can scrape the metrics. The exporter polls OpenSIPS periodically (every 10 seconds by default) to update all metrics.
+
+### License
+
+This project is licensed under the GNU General Public License v3.0.
